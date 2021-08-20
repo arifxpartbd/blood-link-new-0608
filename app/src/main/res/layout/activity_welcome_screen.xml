@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    tools:context=".WelcomeScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/first_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:src="@drawable/confirm_logo" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/secondImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:layout_below="@+id/first_image"
+            android:src="@drawable/blooddonation2" />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50sp"
+            android:progressBackgroundTint="#F8F8FA"
+            android:layout_below="@+id/secondImage"
+            android:progressTint="@android:color/holo_red_dark"
+            tools:targetApi="LOLLIPOP" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

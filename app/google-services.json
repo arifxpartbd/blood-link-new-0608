@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746583337356",
+    "project_id": "blood-link-0608-app",
+    "storage_bucket": "blood-link-0608-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746583337356:android:486e53b836471743968ea9",
+        "android_client_info": {
+          "package_name": "bloodlink0608app.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746583337356-d3eqi3r9j5oej5crlpabcpq7as3p1697.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNua8VzyP4co4ip1Kt93Oeqt0AdNA6L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746583337356-d3eqi3r9j5oej5crlpabcpq7as3p1697.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

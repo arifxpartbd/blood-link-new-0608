@@ -1,0 +1,258 @@
+<resources>
+    <string name="app_name">Blood Link 0608 Pro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="nowife">
+
+        No network available. Please check you network setting and try again.
+
+    </string>
+    <string name="privacy_policy">
+        Privacy Policy
+Md. Ariful Islam built the Blood Link 0608 app as an Free. This SERVICE is provided by Md. Ariful Islam at no cost and is intended for use as is.
+
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Blood Link 0608 unless otherwise defined in this Privacy Policy.
+
+Information Collection and use
+
+For a better experience, while using our Service, I may require you to provide me with certain personally identifiable information. The information that I request will be retained by me and used as described in this privacy policy.
+
+The app does use third party services that may collect information used to identify you.
+
+Link to privacy policy of third party service providers used by the app
+
+Google Play Services
+AdMob
+Firebase Analytics
+Firebase Crashlytics
+Log Data
+
+I want to inform you that whenever you use our Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (IP) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
+
+Cookies
+
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your devices internal memory.
+
+This Service does not use these cookies explicitly. However, the app may use third party code and libraries that use cookies to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+
+Service Providers
+
+I may employ third-party companies and individuals due to the following reasons:
+
+To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist me in analyzing how our Service is used.
+I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. HoIver, they are obligated not to disclose or use the information for any other purpose.
+
+Security
+
+I value your trmet in providing me your Personal Information, thme I are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+
+Links to Other Sites
+
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these Ibsites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+Childrens Privacy
+
+These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided me with personal information, please contact me so that I will be able to do necessary actions.
+
+Changes to This Privacy Policy
+
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+Contact me
+
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact me at 01792927676.
+
+
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="blood_group">Your blood group need to be accurate. If you do not about it, please
+    contact nearest clinic.</string>
+    <string name="weight_info2">Note: You can not donate blood if you are under weight.
+    Minimum weight for donation required 50 KG.</string>
+
+
+    <string name="gender_text">
+        Defining your gender will let us know bring new features for mothers health care.
+    </string>
+
+    <string name="postal">Please provide correct address. This information will keep safe.</string>
+
+
+    <string name="date_text">Correct birth date give your best experience with the community, Do not hide it.</string>
+
+    <string-array name="districtList">Pabna,Rajshahi</string-array>
+
+    <string-array name="bd_districts">
+        <item>Dhaka</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Jamalpur</item>
+        <item>Kishoreganj</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Netrokona</item>
+        <item>Rajbari</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Tangail</item>
+        <item>Bogura</item>
+        <item>Joypurhat</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Chapainawabganj</item>
+        <item>Pabna</item>
+        <item>Rajshahi</item>
+        <item>Sirajgonj</item>
+        <item>Dinajpur</item>
+        <item>Gaibandha</item>
+        <item>Kurigram</item>
+        <item>Lalmonirhat</item>
+        <item>Nilphamari</item>
+        <item>Panchagarh</item>
+        <item>Rangpur</item>
+        <item>Thakurgaon</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Jhalokati</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Bandarban</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chattogram</item>
+        <item>Cumilla</item>
+        <item>Coxs Bazar</item>
+        <item>Feni</item>
+        <item>Khagrachari</item>
+        <item>Lakshmipur</item>
+        <item>Noakhali</item>
+        <item>Rangamati</item>
+        <item>Habiganj</item>
+        <item>Maulvibazar</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Bagerhat</item>
+        <item>Chuadanga</item>
+        <item>Jashore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Satkhira</item>
+    </string-array>
+
+    <string-array name="blood_groups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string name="notice">রক্ত দাতার তালিকা থেকে নম্বর নিয়ে অযথা কাউকে বিরক্ত করলে
+        বিরক্ত কারীর বিরুদ্ধে আইনী পদক্ষেপ নিতে আমাদের সহায়তা করেছে বাংলাদেশ পুলিশের সাইবার ক্রাইম ব্রাঞ্চ \n\n
+        অপরাধ সংঘটন থেকে বিরত থাকুন এবং মানব সেবায় এগিয়ে আসুন \n\n
+        Bangladesh Police Cyber Crime Branch Helps Us
+        Take Legal Action Against Disturbed Person When
+        Disturbing Someone With The Number From The Blood Donor List \n\n
+    </string>
+
+    <string name="forgot2">
+        Just enter the email address you have used to register with us and we will send you a reset link !
+
+        </string>
+
+    <string-array name="ambulance">
+        <item>Pabna Popular \n\nAddress: Pabna popular Hospital, Pabna \n\nMobile: 01765436700</item>
+        <item>Salman Ambulance Service  \n\nAddress: H 4, Road-4, Dhanmondi, Dhaka. \n\nMobile: 01941354079</item>
+        <item>Name: Ratul Islam \n\nAddress: Nirala, west Bania khamer, Khulna \n\nMobile: 01998556514</item>
+        <item>Enamul Haque \n\nAddress: Birampur, dinajpur, Dinajpur \n\nMobile: 01761853924</item>
+        <item>Zia Ambulance Service \n\nAddress: Uttara, Dhaka. \n\nMobile: 01671059513</item>
+        <item>Amir Ambulance Service \n\nAddress: Konabari trishal Mymensing, Mymensingh \n\nMobile: 01937697201</item>
+        <item>Sylhet Ambulance Service \n\nAddress: Medical College Road Sylhet, Sylhet \n\nMobile: 01721520585</item>
+        <item>Raha Ambulance Service \n\nAddress: Savar, Enam Medical College Road Thana Stand, Dhaka. \n\nMobile: 01715636615</item>
+        <item>Ashraful Alom Akul  \n\nAddress: Kulaura, Moulivibazar \n\nMobile: 01716159228</item>
+        <item>Sust Ambulance Service \n\nAddress: Sust, Sylhet. \n\nMobile: 01911506698</item>
+        <item>Dr. Md. Enamul haque \n\nAddress: Kolabagan Road Birampur, Dinajpur, Dinajpur.\n\nMobile: 01761859324</item>
+        <item>Raihan Ambulance Service \n\nAddress: Akhaura, Brahmanbaria \n\nMobile: 01786003430</item>
+        <item>মাতৃছায়া এ্যাম্বুলেন্স সার্ভিস \n\nAddress: Narayanganj, Narayaganj \n\nMobile: 01877744622</item>
+        <item>Alif Ambulance Service \n\n47, Panchlaish R/A,Chittagong \nPhone: 01819380000, 01819325060</item>
+        <item>Dead Body Carrier \n\nChittagong \nPhone:031–650000</item>
+        <item>General Hospital \n\nChittagong \nPhone:031–619584</item>
+        <item>Modern Ambulance Service \n\n20, K.B. Fazlul Quader Road,Chittagong \n\nPhone:031–639730, 0154633214, 01716074497</item>
+    </string-array>
+
+    <string-array name="phone">
+
+        <item>01765436700</item>
+        <item>01941354079</item>
+        <item>01998556514</item>
+        <item>01761853924</item>
+
+        <item>01671059513</item>
+        <item>01937697201</item>
+        <item>01721520585</item>
+        <item>01715636615</item>
+        <item>01716159228</item>
+        <item>01911506698</item>
+        <item>01761859324</item>
+        <item>01786003430</item>
+        <item>01877744622</item>
+        <item>01819380000</item>
+        <item>031-650000</item>
+        <item>031-619584</item>
+        <item>01716074497</item>
+
+
+    </string-array>
+
+    <string-array name="factsdata">
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nগর্ভবতী রোগীর সিজারের জন্য সাধারনত ১ ব্যাগ রক্তের প্রয়োজন হয়… সর্বোচ্চ ২ ব্যাগ…</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nরক্তশুন্যতা রোগীর জন্য ১ বা ২ ব্যাগ… (প্রথমেই রোগীর হিমোগ্লোবিনের পরিমান জেনে নিবেন…লেভেল ১২ হলে নরমাল…৯ এর নিচে নেমে গেলে সাধারনত রক্তের প্রয়োজন হয়)</item>
+        <item>রক্ত দানের পূর্বে করণীয় :\n\nওপেন হার্ট সার্জারির জন্য ৪ থেকে ৬ ব্যাগ রক্তের প্রয়োজন হয়… এর বেশি রক্ত চাইলে বুঝতে হবে রোগী স্ট্যান্ডবাই ডোনার রাখতে চাচ্ছেন</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nবাইপাস সার্জারির জন্য ৩-৪ ব্যাগ রক্ত</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nকিডনি ডায়ালসিসের জন্য সাধারনত ১ ব্যাগ রক্ত… মাসে ২-৩ বার লাগতে পারে</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nডেঙ্গু জ্বরে আক্রান্ত রোগীর প্লাটিলেট প্রয়োজন হয়…সাধারণত প্রতিবারে ৪ ব্যাগ রক্ত হতে ১ ব্যাগ প্লাটিলেট নিয়ে রোগীর শরীরে দেয়া হয়…এফেরেসিস সিস্টেমে একজন রোগী থেকে ১ ব্যাগ প্লাটিলেট সংগ্রহ করা যায়</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nএক্সিডেন্টের রোগীর শারীরিক অবস্থার উপর নির্ভর করে রক্তের প্রয়োজন হয়</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nব্লাড ক্যান্সারের রোগীর প্রচুর রক্তের প্রয়োজন হয়… তবে একসাথে ৪-৫ ব্যাগের বেশি রক্তের প্রয়োজন হয় না…৪-৫ ব্যাগ দেয়ার কিছুদিন পরেই আবার রক্তের প্রয়োজন হয়… এভাবে চলতে থাকে</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nপিত্তথলির পাথরের অপারেশনের জন্য ব্লাড লাগে না… অভিজ্ঞতা থেকে বলছি…যদি অপারেশনের আগে রোগীর হিমোগ্লোবিন কম থাকে, তাহলে হিমোগ্লোবিন বাড়ানোর জন্য রক্ত লাগতে পারে.</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►রক্ত দাতার বয়স ১৮ থেকে ৬০ বছরের মধ্যে হতে হবে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►একজন সুস্থ সবল মানুষের জন্য নিয়মিত রক্তদানের পূর্বশর্ত হল-”স্বদিচ্ছা”</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n► জ্বর, সর্দি, কাশি সুস্থ্য হবার কমপক্ষে ১ সপ্তাহ্ পর রক্তদান করা যাবে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►বিগত ৬(ছয়) মাসের মধ্যে যদি আপনারবড় কোন অপারেশন না হয়ে থাকে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n► নারীদের ক্ষেত্রে- গর্ভাবস্থায় এবং মেয়েলি সমস্যা চলাকালিনসময় রক্ত দিতে পারবেনা।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►রক্তে হিমোগ্লোবিনের পরিমাণ,ব্লাড প্রেসার এবং শরীরের তাপমাত্রা স্বাভাবিক থাকতে হবে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►শারীরিক ওজনঃ- মেয়েদের ক্ষেত্রে ৪৭ কেজি এবং ছেলেদের ক্ষেত্রে ৫০ কেজি বা এর বেশি হতে হবে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n►স্বাস্থ্য ঠিক থাকলে পুরুষরা বছরে ৪বার এবং নারীরা বছরে সর্বোচ্চ ৩বার রক্তদান করতে পারবে।</item>
+        <item>রক্তদানের যোগ্যতা:- \n\n► কোন প্রকার টিকা গ্রহণ করলে ২৮ দিন পর এবং এন্টিবায়োটিক ঔষধ সেবন করার ৭ দিন পর রক্ত-দান করা যাবে।</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nরক্ত দেয়ার আগের রাতে পরিপূর্ণ ঘুম প্রয়োজন।</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n \nরক্ত দানের পূর্বে অতিরিক্ত ১৬ আউন্স পানি বা তরল খাবার গ্রহণ করতে  হবে।</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nযদি আপনি প্লাটিলেট ডোনার হয়ে থাকেন তাহলে রক্তদানের অন্তত ২ দিন আগে থেকেই অ্যাসপিরিন গ্রহণ বন্ধ করতে হবে আপনাকে।</item>
+        <item>রক্ত দানের পূর্বে করণীয় : \n\nরক্তদানের ১২ ঘন্টা পূর্বে লবণাক্ত খাবার যেমন- সল্টেড বিস্কুট বা চিপস খান। কারণ রক্তদান করলে দেহ থেকে ৩ গ্রাম লবণ বের হয়ে যায়।</item>
+
+    </string-array>
+</resources>

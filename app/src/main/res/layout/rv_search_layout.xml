@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/logowhite"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Blood Group:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bloodGroupTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/purple_500"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text="@tools:sample/full_names" />
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/statusTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    tools:text="@tools:sample/cities" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="District"
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/areaTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    tools:text="@tools:sample/cities" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Last Blood Donate"
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/donateDateTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    tools:text="@tools:sample/date/ddmmyy" />
+
+            </TableRow>
+
+            <!--        <TableRow-->
+            <!--            android:padding="5dp"-->
+            <!--            android:weightSum="2">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:text="Phone"-->
+            <!--                android:textColor="@color/black" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/phoneTV"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                tools:text="@tools:sample/cities" />-->
+
+            <!--        </TableRow>-->
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

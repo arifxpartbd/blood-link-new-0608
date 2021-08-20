@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegBloodGroupSelect">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/confirm_logo"
+            android:backgroundTint="@color/purple_200"
+            android:layout_gravity="end"
+            android:layout_marginRight="35dp"
+            android:outlineSpotShadowColor="@android:color/holo_red_dark"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood "
+                android:textColor="@color/purple_200"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link 0608"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is your Blood Group"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/apositiveId"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="A+"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:id="@+id/anegativeid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="A-"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:id="@+id/bpositiveid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="B+"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/bnegativeid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="B-"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:id="@+id/opositiveid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="O+"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:id="@+id/onegativeid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="O-"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/abpositiveid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="AB+"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:id="@+id/abnegativeid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="AB-"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="O-"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_group"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/bloodgroupnextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:background="@drawable/background_selected_tv"/>
+    </LinearLayout>
+</ScrollView>

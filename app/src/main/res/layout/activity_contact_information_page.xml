@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactInformationPage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            >
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/confirm_logo"
+                android:backgroundTint="@color/purple_200"
+                android:layout_gravity="end"
+                android:layout_marginRight="35dp"
+                android:outlineSpotShadowColor="@android:color/holo_red_dark"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood "
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donation"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="14"
+                app:startIconDrawable="@drawable/ic_baseline_mobile_friendly_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/phone1id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:text="+8801"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--        <com.google.android.material.textfield.TextInputLayout-->
+
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:hint="Alternative Phone No"-->
+            <!--            android:layout_margin="10dp"-->
+            <!--            app:counterEnabled="true"-->
+            <!--            app:counterMaxLength="11"-->
+            <!--            app:startIconDrawable="@drawable/ic_baseline_mobile_friendly_24"-->
+            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/phone2id"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:inputType="phone"-->
+            <!--                android:text="017"-->
+
+            <!--                />-->
+
+            <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Social(Optional)"
+                android:layout_margin="10dp"
+                app:endIconTint="@color/purple_200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/facebookId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:text="https://www.facebook.com/"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please provide correct phone no. This information will keep safe"
+                android:textSize="18sp"/>
+
+
+            <Button
+                android:id="@+id/contactnextbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_selected_tv"/>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4198182563462163/9838809221"
+        >
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
