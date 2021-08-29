@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -20,7 +21,14 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private AdView mAdView;
     private AlertDialog.Builder alertDialogBuilder;
 
+    private DatabaseReference RootRef;
+    private String currentUserID;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         //getSupportActionBar().hide();
 
 
+
+        mAuth = FirebaseAuth.getInstance();
+        currentUserID = mAuth.getCurrentUser().getUid();
+        RootRef = FirebaseDatabase.getInstance().getReference();
 
         chipNavigationBar = findViewById(R.id.navigationBarId);
         chipNavigationBar.setItemSelected(R.id.navi_home,true);
@@ -98,8 +113,26 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.fragment_container).setVisibility(View.VISIBLE);
         }
 
+        //UserInfoCheck();
         super.onStart();
     }
+
+//    private void UserInfoCheck() {
+//
+//        RootRef.child("User").child(currentUserID)
+//                .addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                });
+//    }
 
     public boolean isConnected(){
 

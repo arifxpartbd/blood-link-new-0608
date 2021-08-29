@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.ads.mediation.admob.AdMobAdapter;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -58,6 +60,8 @@ public class MyPostActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private InterstitialAd mInterstitialAd;
     private final String TAG ="Admob";
+
+    private boolean euConsent= false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,12 +105,14 @@ public class MyPostActivity extends AppCompatActivity {
 
 
         //progressBar.setVisibility(View.VISIBLE);
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("mypost").child(currentUserID);
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("mypost")
+                .child(currentUserID);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dataPosts.clear();
                 if (dataSnapshot.exists())
+
                 {
                     for (DataSnapshot ItemSnapshot : dataSnapshot.getChildren())
                     {
@@ -115,8 +121,11 @@ public class MyPostActivity extends AppCompatActivity {
                     }
                     Collections.reverse(dataPosts);
                     myAdepter.notifyDataSetChanged();
-                    progressBar.setVisibility(View.GONE);
+
+                }else {
+                    Toast.makeText(MyPostActivity.this,"No Data Found",Toast.LENGTH_SHORT).show();
                 }
+
             }
 
             @Override
@@ -144,8 +153,6 @@ public class MyPostActivity extends AppCompatActivity {
                 });
 
     }
-
-
 
     public class Adapter extends androidx.recyclerview.widget.RecyclerView.Adapter<MyPostActivity.Adapter.MyHolder>
     {
@@ -221,6 +228,7 @@ public class MyPostActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+
             });
 
 
@@ -251,6 +259,9 @@ public class MyPostActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 

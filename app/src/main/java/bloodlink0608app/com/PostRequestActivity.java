@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -15,11 +16,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.ads.mediation.admob.AdMobAdapter;
+import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -54,7 +61,9 @@ public class PostRequestActivity extends AppCompatActivity {
 
     String[] bag=new String[]{"1 Bag","2 Bag","3 Bag","4 Bag","5 Bag","6 Bag"};
 
+    private InterstitialAd mInterstitialAd;
     private AdView mAdView;
+    private boolean euConsent= false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,9 +75,16 @@ public class PostRequestActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+                if (euConsent){
+                    createPersonailAd();
+                }else {
+                    createnonPersonailAd();
+                }
             }
         });
 
@@ -126,6 +142,7 @@ public class PostRequestActivity extends AppCompatActivity {
         binding.publishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 String postbloodgroup = binding.bloodgroup.getText().toString();
                 String postdate = binding.requestDate.getText().toString();
@@ -242,9 +259,20 @@ public class PostRequestActivity extends AppCompatActivity {
 
                                                 databaseReference.setValue(infomypost);
                                                 loadingbar.dismiss();
+
+
+                                                if (mInterstitialAd != null) {
+                                                    mInterstitialAd.show(PostRequestActivity.this);
+                                                } else {
+                                                    Log.d("TAG", "The interstitial ad wasn't ready yet.");
+
+                                                    openMainActivity();
+                                                }
                                             }
                                         }
                                     });
+
+
 
                                     Intent intent = new Intent(PostRequestActivity.this,MainActivity.class);
                                     startActivity(intent);
@@ -266,6 +294,81 @@ public class PostRequestActivity extends AppCompatActivity {
         });
 
     }
+
+    private void createnonPersonailAd() {
+        Bundle networkExtrasBundle = new Bundle();
+        networkExtrasBundle.putInt("rdp", 1);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addNetworkExtrasBundle(AdMobAdapter.class, networkExtrasBundle)
+                .build();
+        createIntersititialsAd(adRequest);
+    }
+
+    private void createPersonailAd() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+        createIntersititialsAd(adRequest);
+    }
+
+    private void createIntersititialsAd(AdRequest adRequest) {
+
+        //for live ads: ca-app-pub-4198182563462163/2981277908
+        //for test ca-app-pub-3940256099942544/1033173712
+        InterstitialAd.load(this,"ca-app-pub-4198182563462163/2981277908", adRequest, new InterstitialAdLoadCallback() {
+            @Override
+            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                // The mInterstitialAd reference will be null until
+                // an ad is loaded.
+                mInterstitialAd = interstitialAd;
+                Log.d("----Admob", "onAdLoaded");
+
+
+                mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                    @Override
+                    public void onAdDismissedFullScreenContent() {
+                        // Called when fullscreen content is dismissed.
+                        Log.d("TAG", "The ad was dismissed.");
+
+                        openMainActivity();
+                    }
+
+                    @Override
+                    public void onAdFailedToShowFullScreenContent(AdError adError) {
+                        // Called when fullscreen content failed to show.
+                        Log.d("TAG", "The ad failed to show.");
+                        openMainActivity();
+                    }
+
+                    @Override
+                    public void onAdShowedFullScreenContent() {
+                        // Called when fullscreen content is shown.
+                        // Make sure to set your reference to null so you don't
+                        // show it a second time.
+                        mInterstitialAd = null;
+                        Log.d("TAG", "The ad was shown.");
+
+                    }
+                });
+
+            }
+
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                // Handle the error
+                Log.d("----Admob", loadAdError.getMessage());
+                mInterstitialAd = null;
+            }
+        });
+    }
+
+    private void openMainActivity() {
+        Intent intent = new Intent(PostRequestActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
+
+
+    //ffor adds below
+
+
 
     private void openStartDatePicker() {
 
